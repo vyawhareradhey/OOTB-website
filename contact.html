@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — AnvitaPLM</title>
+  <meta name="description" content="Contact AnvitaPLM for PLM implementation, automation, and quality services." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:," />
+</head>
+<body>
+  <!-- ===============================
+       Header / Navigation
+       =============================== -->
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="ootb_logo.png" alt="OOTB PLM Logo" class="logo-img">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li class="nav-dropdown">
+          <button class="dropbtn">Solutions ▼</button>
+          <div class="dropdown-content">
+            <div class="dropdown-grid">
+              <a href="#">Product Lifecycle</a>
+              <a href="#">CAD Integration</a>
+              <a href="#">Analytics</a>
+              <a href="#">Automation</a>
+              <a href="#">Cloud Services</a>
+              <a href="#">Data Management</a>
+              <a href="#">AI/ML</a>
+              <a href="#">Consulting</a>
+              <a href="#">Support</a>
+              <a href="#">Custom Tools</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Tell us about your goals—let’s build something great together.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section container contact-grid">
+    <!-- Contact Form -->
+    <form id="contactForm" class="card form-card" method="POST"
+          action="https://formsubmit.co/ukahuka48@gmail.com" novalidate>
+      <h2 class="form-title">Send a Message</h2>
+
+      <!-- FormSubmit hidden fields -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Contact Form Submission — AnvitaPLM">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="http://localhost/thankyou.html">
+
+
+      <div class="form-field">
+        <label for="name">Name <span class="req">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+        <small class="error" aria-live="polite"></small>
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email <span class="req">*</span></label>
+        <input type="email" id="email" name="email" placeholder="you@company.com" required />
+        <small class="error" aria-live="polite"></small>
+      </div>
+
+      <div class="form-field">
+        <label for="message">Message <span class="req">*</span></label>
+        <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
+        <small class="error" aria-live="polite"></small>
+      </div>
+
+      <button type="submit" class="btn btn-full">Submit</button>
+      <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <!-- Company Details -->
+    <aside class="card contact-card">
+      <h2>Company Details</h2>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> ukahuka48@gmail.com</li>
+        <li><strong>Phone:</strong> +91 99999 99999</li>
+        <li><strong>Address:</strong> Yashoda heights, Near Vinayak Hospital, Warje Pune 411058</li>
+      </ul>
+      <p class="muted">Prefer email? We typically respond within one business day.</p>
+    </aside>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="container cta-band">
+    <h3 style="margin:0 0 .4rem 0;">Need an estimate?</h3>
+    <p class="muted" style="margin:0 0 10px 0;">Share your goals and constraints—we’ll reply with a short plan.</p>
+    <a class="btn" href="contact.html">Send a message</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>©️ <span id="year"></span> OOTB PLM. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

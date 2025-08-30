@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — NexTech-style</title>
+  <meta name="description" content="About NexTechPLM — mission, vision, team and capabilities." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===============================
+       Timeline (Center Aligned)
+       =============================== */
+    .timeline {
+      position: relative;
+      margin: 60px auto;
+      padding: 20px 0;
+      max-width: 1000px;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: linear-gradient(var(--brand), var(--brand-2));
+      transform: translateX(-50%);
+    }
+    .timeline-step {
+      position: relative;
+      width: 50%;
+      padding: 20px 40px;
+    }
+    .timeline-step.left {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-step.right {
+      left: 50%;
+      text-align: left;
+    }
+    .timeline-step::before {
+      content: attr(data-step);
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+      z-index: 2;
+    }
+    .timeline-card {
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      transition: transform .2s ease, box-shadow .2s ease;
+      position: relative;
+      z-index: 1;
+    }
+    .timeline-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0,0,0,.25);
+    }
+    .timeline-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.25rem;
+    }
+    .timeline-card p,
+    .timeline-card ul {
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+    .timeline-card ul {
+      padding-left: 20px;
+    }
+
+    /* Responsive - stack on small screens */
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 20px;
+      }
+      .timeline-step {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 20px;
+        text-align: left !important;
+      }
+      .timeline-step::before {
+        left: 20px;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===============================
+       Header / Navigation
+       =============================== -->
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <img src="ootb_logo.png" alt="OOTB PLM Logo" class="logo-img">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li class="nav-dropdown">
+          <button class="dropbtn">Solutions ▼</button>
+          <div class="dropdown-content">
+            <div class="dropdown-grid">
+              <a href="#">Product Lifecycle</a>
+              <a href="#">CAD Integration</a>
+              <a href="#">Analytics</a>
+              <a href="#">Automation</a>
+              <a href="#">Cloud Services</a>
+              <a href="#">Data Management</a>
+              <a href="#">AI/ML</a>
+              <a href="#">Consulting</a>
+              <a href="#">Support</a>
+              <a href="#">Custom Tools</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===============================
+     About Hero
+     =============================== -->
+<section class="section about-hero">
+  <div class="wrap grid-2" style="align-items: center; text-align: center;">
+    <div class="reveal">
+      <h1>About OOTB <span class="accent">PLM</span></h1>
+      <p class="muted lead">
+        We deliver integrated PLM, CAD, and analytics solutions to engineering teams worldwide.
+      </p>
+      <p>
+        Our core focus is aligning product data, design processes, and cross-functional teams 
+        through secure and scalable systems that reduce time to market.
+      </p>
+    </div>
+    <div class="reveal">
+      <img src="assets/about-illustration-placeholder.png" 
+           alt="About illustration" 
+           style="max-width: 90%; margin: 0 auto; display: block;" />
+    </div>
+  </div>
+</section>
+
+
+    <!-- ===============================
+         Timeline / Stepper Section
+         =============================== -->
+    <section class="section mission">
+      <div class="wrap">
+        <h1 align = "center"><span class="accent">Our Core Value</span></h1>
+        <p align="center">We are dedicated to providing our clients with high-quality services.  Our guiding principles are:</p>
+        <div class="timeline">
+
+          <!-- Step 1 -->
+          <div class="timeline-step right reveal" >
+            <div class="timeline-card">
+              <h3 align="center">Mission</h3>
+              <p align="justify-content">Optimize your return on investment with our Teamcenter installation, which uses top-notch PLM solutions to achieve excellence and customer happiness.  We use cutting-edge, cooperative tactics to achieve your PLM vision.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-step left reveal"  >
+            <div class="timeline-card">
+              <h3 align="center">Vision</h3>
+              <p align="justify-content">In order to achieve excellence and customer happiness with top-notch PLM solutions, maximize your return on investment with our Teamcenter installation.  We work together to advance your PLM vision using cutting-edge tactics.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-step right reveal" >
+            <div class="timeline-card">
+              <h3 align="center">What we do</h3>
+              <ul>
+                <li>PLM strategy, implementation and integrations</li>
+                <li>CAD data pipelines and viewers</li>
+                <li>Analytics & dashboarding</li>
+                <li>UX design for engineering workflows</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>©️ <span id="year"></span> OOTB PLM. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
